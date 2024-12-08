@@ -10,12 +10,37 @@
         nav { display: flex; justify-content: center; background-color: #cab48d; padding: 10px; }
         nav a { color: black; text-decoration: none; margin: 0 15px; font-size: 18px; }
         nav a:hover { text-decoration: underline; }
-        section { padding: 30px; text-align: center; }
-        section h2 { font-size: 28px; margin-bottom: 20px; color: black; }
-        section p, ul { font-size: 16px; color: black; max-width: 800px; margin: 0 auto; text-align: left; }
-        section ul { list-style: none; padding: 0; }
+        section { padding: 30px; }
+        section h2 { font-size: 28px; margin-bottom: 20px; color: black; text-align: center; }
+        section ul { list-style: none; padding: 0; font-size: 16px; color: black; }
         section ul li { padding: 5px 0; }
         footer { text-align: center; background-color: #cab48d; color: black; padding: 10px 0; margin-top: 30px; }
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .content-container .text {
+            flex: 1;
+        }
+        .content-container .callout {
+            flex: 1;
+            background-color: #f9f9f9;
+            border: 2px solid #cab48d;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 16px;
+            color: black;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .content-container .callout strong {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -51,13 +76,25 @@
     </nav>
     <section>
         <h2>What We Offer</h2>
-        <ul>
-            <li>✔ Comprehensive shoe cleaning and restoration</li>
-            <li>✔ Premium care for designer and luxury footwear</li>
-            <li>✔ Eco-friendly cleaning products and methods</li>
-            <li>✔ Customized restoration for sneakers and boots</li>
-            <li>✔ Protection and preservation services</li>
-        </ul>
+        <div class="content-container">
+            <div class="text">
+                <ul>
+                    <li>✔ Comprehensive shoe cleaning and restoration</li>
+                    <li>✔ Premium care for designer and luxury footwear</li>
+                    <li>✔ Eco-friendly cleaning products and methods</li>
+                    <li>✔ Customized restoration for sneakers and boots</li>
+                    <li>✔ Protection and preservation services</li>
+                </ul>
+            </div>
+            <div class="callout">
+                <strong>CHICAGO SNEAKER HEADS LISTEN UP☝🏽👟</strong>
+                <p>Shoe Cleanings 🧼</p>
+                <p>Shoe Restorations 🆕</p>
+                <p>Shoe Customizations 🎨</p>
+                <p>Suede Re-dye</p>
+                <p>Sole Whitening</p>
+            </div>
+        </div>
     </section>
     <section>
         <h2>Before & After</h2>
