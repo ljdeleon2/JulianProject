@@ -16,7 +16,13 @@
         footer { text-align: center; background-color: #cab48d; color: black; padding: 10px 0; margin-top: 30px; }
         .team-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
         .team-member { text-align: center; max-width: 200px; }
-        .team-member img { width: 100%; border-radius: 50%; margin-bottom: 10px; }
+        .team-member img {
+            width: 150px; /* Set consistent width */
+            height: 150px; /* Set consistent height */
+            object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+            border-radius: 50%; /* Make images circular */
+            margin-bottom: 10px;
+        }
         .team-member h3 { margin: 5px 0; color: black; }
         .team-member p { font-size: 14px; color: black; }
     </style>
@@ -38,25 +44,24 @@
         <p>Our mission is to serve Chicago’s diverse community with expert craftsmanship, eco-friendly practices, and personalized care.</p>
     </section>
     <section>
-        <section>
-    <h2>Meet the Team</h2>
-    <div class="team-container">
-        <div class="team-member">
-            <img src="images/team-member1.jpg" alt="Julian Cortez">
-            <h3>Julian Cortez</h3>
-            <p>Founder & Shoe Restoration Expert</p>
+        <h2>Meet the Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/team-member1.jpg" alt="Julian Cortez">
+                <h3>Julian Cortez</h3>
+                <p>Founder & Shoe Restoration Expert</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team-member2.jpg" alt="LaMelo Ball">
+                <h3>LaMelo Ball</h3>
+                <p>Marketing & Customer Relations</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team-member3.jpg" alt="Nicholas Stewart">
+                <h3>Nicholas Stewart</h3>
+                <p>Shoe Care Specialist</p>
+            </div>
         </div>
-        <div class="team-member">
-            <img src="images/team-member2.jpg" alt="LaMelo Ball">
-            <h3>LaMelo Ball</h3>
-            <p>Marketing & Customer Relations</p>
-        </div>
-        <div class="team-member">
-            <img src="images/team-member3.jpg" alt="Nicholas Stewart">
-            <h3>Nicholas Stewart</h3>
-            <p>Shoe Care Specialist</p>
-        </div>
-    </div>
     </section>
     <footer>
         &copy; 2024 Ju Restores. All Rights Reserved.
