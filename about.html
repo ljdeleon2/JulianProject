@@ -14,6 +14,11 @@
         section h2 { font-size: 28px; margin-bottom: 20px; color: black; }
         section p { font-size: 16px; color: black; max-width: 800px; margin: 0 auto; }
         footer { text-align: center; background-color: #cab48d; color: black; padding: 10px 0; margin-top: 30px; }
+        .team-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+        .team-member { text-align: center; max-width: 200px; }
+        .team-member img { width: 100%; border-radius: 50%; margin-bottom: 10px; }
+        .team-member h3 { margin: 5px 0; color: black; }
+        .team-member p { font-size: 14px; color: black; }
     </style>
 </head>
 <body>
@@ -31,6 +36,26 @@
         <h2>Our Story</h2>
         <p>Ju Restores was founded with a passion for bringing new life to footwear while promoting sustainability.</p>
         <p>Our mission is to serve Chicago’s diverse community with expert craftsmanship, eco-friendly practices, and personalized care.</p>
+    </section>
+    <section>
+        <h2>Meet the Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/team-member1.jpg" alt="John Doe">
+                <h3>John Doe</h3>
+                <p>Founder & Shoe Restoration Expert</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team-member2.jpg" alt="Jane Smith">
+                <h3>Jane Smith</h3>
+                <p>Marketing & Customer Relations</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team-member3.jpg" alt="Mike Johnson">
+                <h3>Mike Johnson</h3>
+                <p>Shoe Care Specialist</p>
+            </div>
+        </div>
     </section>
     <footer>
         &copy; 2024 Ju Restores. All Rights Reserved.
