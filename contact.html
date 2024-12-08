@@ -5,14 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Ju Restores</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background-color: #cab48d; color: black; text-align: center; padding: 20px 0; }
-        nav { display: flex; justify-content: center; background-color: #cab48d; padding: 10px; }
-        nav a { color: black; text-decoration: none; margin: 0 15px; font-size: 18px; }
-        nav a:hover { text-decoration: underline; }
-        section { padding: 30px; text-align: center; }
-        section h2 { font-size: 28px; margin-bottom: 20px; color: black; }
-        footer { text-align: center; background-color: #cab48d; color: black; padding: 10px 0; margin-top: 30px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        header, footer {
+            background-color: #cab48d;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #cab48d;
+            padding: 10px 0;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #cab48d;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #8b4513;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 8px;
+        }
+        blockquote {
+            font-style: italic;
+            margin: 10px auto;
+            padding: 10px;
+            background: #f3f3f3;
+            border-left: 4px solid #cab48d;
+        }
+        .contact-info p i {
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
@@ -28,12 +90,51 @@
     </nav>
     <section>
         <h2>Get in Touch</h2>
-        <p>Email: info@jurestores.com</p>
-        <p>Phone: (555) 555-5555</p>
-        <p>Follow us on:
-            <a href="https://www.instagram.com/ju_restores/" target="_blank">Instagram</a>,
-            <a href="https://www.facebook.com/profile.php?id=100079985200762" target="_blank">Facebook</a>
-        </p>
+        <div class="contact-info">
+            <p>
+                <i class="fa fa-envelope"></i> Email: <a href="mailto:info@jurestores.com">info@jurestores.com</a><br>
+                <i class="fa fa-phone"></i> Phone: (555) 555-5555<br>
+                <i class="fa fa-instagram"></i> Follow us on <a href="https://instagram.com/jurestores">Instagram</a> and <a href="https://facebook.com/jurestores">Facebook</a>
+            </p>
+        </div>
+    </section>
+    <section>
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" placeholder="Enter subject"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section>
+        <h2>Find Us</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345086164!2d144.9537353153183!3d-37.81720997975162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577db00d8f4ef8b!2sJu%20Restores!5e0!3m2!1sen!2s!4v1639014689369!5m2!1sen!2s"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </section>
+    <section>
+        <h2>What Our Customers Say</h2>
+        <blockquote>
+            "Ju Restores did an amazing job on my favorite sneakers! Highly recommended." - A Happy Customer
+        </blockquote>
+        <blockquote>
+            "Best shoe restoration service in Chicago. Love their attention to detail!" - Another Customer
+        </blockquote>
     </section>
     <footer>
         &copy; 2024 Ju Restores. All Rights Reserved.
