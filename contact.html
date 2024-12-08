@@ -5,71 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Ju Restores</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+        /* General Page Styles */
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f9f9f9; 
         }
-
-        header {
-            background-color: #cab48d;
-            color: black;
-            text-align: center;
-            padding: 20px 0;
+        header { 
+            background-color: #cab48d; 
+            color: black; 
+            text-align: center; 
+            padding: 20px 0; 
         }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #cab48d;
-            padding: 10px;
+        nav { 
+            display: flex; 
+            justify-content: center; 
+            background-color: #cab48d; 
+            padding: 10px; 
         }
-
-        nav a {
-            color: black;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
+        nav a { 
+            color: black; 
+            text-decoration: none; 
+            margin: 0 15px; 
+            font-size: 18px; 
         }
-
-        nav a:hover {
-            text-decoration: underline;
+        nav a:hover { 
+            text-decoration: underline; 
         }
-
-        section {
-            padding: 40px;
-            text-align: center;
-            background-color: #f9f9f9;
-            border: 1px solid #eaeaea;
-            margin: 20px 50px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        section { 
+            padding: 30px; 
+            text-align: center; 
         }
-
-        section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: black;
+        section h2 { 
+            font-size: 28px; 
+            margin-bottom: 20px; 
+            color: black; 
         }
-
-        section p {
-            font-size: 18px;
-            margin: 10px 0;
+        .contact-info, .contact-form { 
+            background-color: #eaeaea; 
+            padding: 20px; 
+            margin: 20px auto; 
+            max-width: 600px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
         }
-
-        footer {
-            text-align: center;
-            background-color: #cab48d;
-            color: black;
-            padding: 10px 0;
-            margin-top: 30px;
+        .contact-info p, .contact-form p { 
+            margin: 10px 0; 
+        }
+        .contact-form input, .contact-form textarea { 
+            width: calc(100% - 20px); 
+            padding: 10px; 
+            margin: 10px 0; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+        }
+        .contact-form button { 
+            background-color: #cab48d; 
+            color: black; 
+            border: none; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+        .contact-form button:hover { 
+            background-color: #b29d7b; 
+        }
+        footer { 
+            text-align: center; 
+            background-color: #cab48d; 
+            color: black; 
+            padding: 10px 0; 
+            margin-top: 30px; 
         }
     </style>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <h1>Contact Us</h1>
     </header>
+
+    <!-- Navigation Bar -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -77,17 +95,47 @@
         <a href="locations.html">Locations</a>
         <a href="contact.html">Contact Us</a>
     </nav>
+
+    <!-- Contact Info Section -->
     <section>
-        <h2>Get in Touch</h2>
-        <p>We’d love to hear from you! For inquiries, collaborations, or feedback, reach out to us using the details below.</p>
-        <p>Email: <a href="mailto:info@jurestores.com">info@jurestores.com</a></p>
-        <p>Phone: (555) 555-5555</p>
-        <p>Follow us on:
-            <a href="https://www.instagram.com/ju_restores/" target="_blank">Instagram</a>,
-            <a href="https://www.facebook.com/profile.php?id=100079985200762" target="_blank">Facebook</a>
-        </p>
-        <p><strong>Operating Hours:</strong> Monday - Friday: 9 AM - 6 PM | Saturday: 10 AM - 4 PM</p>
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>Email: <a href="mailto:info@jurestores.com">info@jurestores.com</a></p>
+            <p>Phone: (555) 555-5555</p>
+            <p>Follow us on: 
+                <a href="https://www.instagram.com/ju_restores/" target="_blank">Instagram</a>, 
+                <a href="https://www.facebook.com/profile.php?id=100079985200762" target="_blank">Facebook</a>
+            </p>
+        </div>
     </section>
+
+    <!-- Contact Form Section -->
+    <section>
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="post">
+                <p>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </p>
+                <p>
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" id="subject" name="subject" placeholder="Enter subject">
+                </p>
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="5"></textarea>
+                </p>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
         &copy; 2024 Ju Restores. All Rights Reserved.
     </footer>
