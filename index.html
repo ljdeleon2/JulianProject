@@ -11,19 +11,19 @@
             padding: 0;
         }
         header {
-            background-color: #cab48d; /* Updated to match Foothill Drive */
-            color: white;
+            background-color: #cab48d; /* Foothill Drive */
+            color: black; /* Updated to black */
             text-align: center;
             padding: 20px 0;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #cab48d; /* Updated to match Foothill Drive */
+            background-color: #cab48d; /* Foothill Drive */
             padding: 10px;
         }
         nav a {
-            color: white;
+            color: black; /* Updated to black */
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
@@ -47,15 +47,42 @@
         .hero h1 {
             font-size: 36px;
             margin: 0;
+            color: black; /* Updated to black */
         }
         .hero p {
             font-size: 20px;
             color: #7f8c8d;
         }
+        section {
+            padding: 30px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: black; /* Updated to black */
+        }
+        section p {
+            font-size: 16px;
+            color: black; /* Updated to black */
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .features div {
+            max-width: 250px;
+        }
+        .features h3 {
+            color: black; /* Updated to black */
+        }
         footer {
             text-align: center;
-            background-color: #cab48d; /* Updated to match Foothill Drive */
-            color: white;
+            background-color: #cab48d; /* Foothill Drive */
+            color: black; /* Updated to black */
             padding: 10px 0;
             margin-top: 30px;
         }
@@ -78,6 +105,39 @@
         <h1>Welcome to Ju Restores</h1>
         <p>Your trusted partner in eco-friendly shoe restoration.</p>
     </div>
+    <section>
+        <h2>Our Mission</h2>
+        <p>“At Ju Restores, our mission is to bring new life into your kicks so you can step up with confidence. With our expert craftsmanship and eco-friendly practices, we serve Chicago’s diverse community with personalized care, building trust one step at a time. Whether you're reviving a favorite pair or giving pre-loved ones a fresh start, we aim to elevate footwear restoration into an art form that supports sustainability and celebrates individuality.”</p>
+    </section>
+    <section>
+        <h2>Why Choose Ju Restores?</h2>
+        <div class="features">
+            <div>
+                <h3>Eco-Friendly Practices</h3>
+                <p>We use sustainable materials and methods to minimize our environmental impact.</p>
+            </div>
+            <div>
+                <h3>Expert Craftsmanship</h3>
+                <p>Our team combines skill and care to restore your shoes to their former glory.</p>
+            </div>
+            <div>
+                <h3>Personalized Service</h3>
+                <p>Every pair of shoes gets individual attention, ensuring the best results.</p>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #ecf0f1;">
+        <h2>Step Up with Confidence</h2>
+        <p>Explore our services and discover how we can help bring new life to your footwear.</p>
+        <a href="services.html" style="padding: 10px 20px; background-color: #cab48d; color: black; text-decoration: none; border-radius: 5px;">View Our Services</a>
+    </section>
+    <section>
+        <h2>What Our Customers Say</h2>
+        <blockquote style="font-style: italic; color: black; max-width: 600px; margin: 0 auto;">
+            "Ju Restores gave my favorite sneakers a fresh start! The results were amazing, and the process was seamless."
+            <br>— A Happy Customer
+        </blockquote>
+    </section>
     <footer>
         &copy; 2024 Ju Restores. All Rights Reserved.
     </footer>
